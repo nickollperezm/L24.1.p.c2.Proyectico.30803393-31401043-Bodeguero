@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BODEGUERO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="mainForm">
+        <h3>Bodeguero</h3>
+        <h4>Ingrese la cantidad de billetes que posee actualmente:</h4>
+        <input type="text" id="mainForm_inIni10" placeholder="Billetes de $10"></input>
+        <input type="text" id="mainForm_inIni20" placeholder="Billetes de $20"></input>
+        <input type="text" id="mainForm_inIni50" placeholder="Billetes de $50"></input>
+        <button id="mainForm_btInicializar">Inicializar bodega</button>
+        <h5>Cantidad inicial de billetes: <span id="mainForm_lblInicial10">?</span> billetes de $10, <span id="mainForm_lblInicial20">?</span> billetes de $20 y <span id="mainForm_lblInicial50">?</span> billetes de $50</h5>
+        <table id="mainForm_tabla">
+            <tr>
+                <th>Cédula</th>
+                <th>Denominación</th>
+                <th>Cantidad</th>
+                <th>Monto Cuenta</th>
+            </tr>
+        </table>
+        <button id="mainForm_btAgregar">Agregar cliente</button>
+        <h5>Monto final de billetes de $10: $<span id="mainForm_lblMontoBill10">?</span></h5>
+        <h5>Monto final de billetes de $20: $<span id="mainForm_lblMontoBill20">?</span></h5>
+        <h5>Monto final de billetes de $50: $<span id="mainForm_lblMontoBill50">?</span></h5>
+        <h5>Al bodeguero le queda un monto total de: $<span id="mainForm_lblMontoTotal">?</span></h5>
+    </section>
+    <section id="clienteForm">
+        <h3>Datos del cliente</h3>
+        <input type="text" id="clienteForm_inCedula" placeholder="Cédula"></input>
+        <input type="text" id="clienteForm_inDenominacion" placeholder="Denominación"></input>
+        <input type="text" id="clienteForm_inCantidad" placeholder="Cantidad"></input>
+        <button id="clienteForm_btAceptar">Aceptar</button>
+    </section>
+</body>
+<script type="module">
+    import Cl_controlador from "./js/Cl_controlador.js";
+    new Cl_controlador()
+</script>
+</html>

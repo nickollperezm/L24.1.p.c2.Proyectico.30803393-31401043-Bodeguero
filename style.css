@@ -1,0 +1,17 @@
+table {
+    width:100%;
+}
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+section {
+    border: 1px solid black;
+    margin-top: 10px;
+}
+button {
+    margin-top: 10px;
+}
